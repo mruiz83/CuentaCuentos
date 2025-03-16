@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Cuentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MITOS Y LEYENDAS NICARAGÜENSES</h1>
+    </header>
+    
+    <main>
+        <section id="narrador-container">
+            <div id="narrador">
+                <img src="images/narrador.png" alt="Narrador de cuentos" id="narrador-img" onclick="saludar()">
+                <p id="mensaje-bienvenida"></p>
+                <audio id="audio-bienvenida" src="audio/Bienvenida.mp3"></audio>
+                <button id="play-bienvenida" onclick="saludar()">🎙 Bienvenida</button>
+            </div>
+        </section>
+
+        <section id="carrusel-container">
+            <button id="prevBtn" aria-label="Cuento anterior">⬅</button>
+            <div id="carrusel">
+                <div class="carrusel-inner">
+                    <div class="cuento">
+                        <a href="la_mocuana/index.html">
+                            <img src="la_mocuana/images/mocuana1.png" alt="Ilustración de La Mocuana">
+                            <p>La Mocuana</p>
+                        </a>
+                    </div>
+                    <div class="cuento">
+                        <a href="cuento2.html">
+                            <img src="images/cuento2.jpg" alt="Ilustración de Cuento 2">
+                            <p>Cuento 2</p>
+                        </a>
+                    </div>
+                    <div class="cuento">
+                        <a href="cuento3.html">
+                            <img src="images/cuento3.jpg" alt="Ilustración de Cuento 3">
+                            <p>Cuento 3</p>
+                        </a>
+                    </div>
+                    <div class="cuento">
+                        <a href="cuento4.html">
+                            <img src="images/cuento4.jpg" alt="Ilustración de Cuento 4">
+                            <p>Cuento 4</p>
+                        </a>
+                    </div>
+                    <div class="cuento">
+                        <a href="cuento5.html">
+                            <img src="images/cuento5.jpg" alt="Ilustración de Cuento 5">
+                            <p>Cuento 5</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button id="nextBtn" aria-label="Cuento siguiente">➡</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
